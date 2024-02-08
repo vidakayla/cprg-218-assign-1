@@ -1,0 +1,59 @@
+/* Global styles (global.css) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Card styles (assignment_one.css) */
+  .card-container {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card {
+    width: calc(33.33% - 20px); /* Equal width for all columns */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  /* Media queries */
+  @media (max-width: 767px) {
+    .card {
+      width: 100%; /* Full width on mobile */
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .card {
+      width: calc(50% - 10px); /* 2 columns on tablet */
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .card {
+      width: calc(33.33% - 20px); /* 3 columns on desktop */
+    }
+  }
