@@ -57,3 +57,14 @@ body {
       width: calc(33.33% - 20px); /* 3 columns on desktop */
     }
   }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+  .card {
+    width: calc(50% - 10px); /* 2 columns on tablet */
+  }
+
+  /* Target the last card and set its width to 100% */
+  .card-container .card:last-child {
+    width: 100%;
+  }
+}
